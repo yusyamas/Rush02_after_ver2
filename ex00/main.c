@@ -25,8 +25,8 @@ char	*int_to_value(int num, char *dict);
 
 char	*put_digit(int num_digit)
 {
-	char *char_digit;
-	int i;
+	char	*char_digit;
+	int		i;
 
 	i = 1;
 	char_digit = malloc(40 * sizeof(char));
@@ -48,9 +48,9 @@ char	*put_digit(int num_digit)
 
 void	put_num_all(char *argv, char *dict)
 {
-	int num_len;
-	int num_digit;
-	int mod;
+	int	num_len;
+	int	num_digit;
+	int	mod;
 
 	num_len = ft_strlen(argv);
 	num_digit = (num_len - 1) / 3;
@@ -75,7 +75,7 @@ void	put_num_all(char *argv, char *dict)
 
 int	main(int argc, char **argv)
 {
-	char *dict;
+	char	*dict;
 
 	if (argc <= 1 || argc >= 4)
 		error_msg(3);

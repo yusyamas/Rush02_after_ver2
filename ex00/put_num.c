@@ -29,7 +29,7 @@ void	ft_putvalue(char *str)
 
 void	ft_put_one(char c, char *dict)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (dict[i] != '\0')
@@ -50,7 +50,7 @@ void	ft_put_one(char c, char *dict)
 
 void	ft_put_two(char c, char *dict)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (dict[i] != '\0')
@@ -71,7 +71,7 @@ void	ft_put_two(char c, char *dict)
 
 void	ft_put_teen(char *c, char *dict)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (dict[i] != '\0')
