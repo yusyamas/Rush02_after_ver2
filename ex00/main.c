@@ -86,7 +86,8 @@ int	main(int argc, char **argv)
 	}
 	else if (argc == 3 && is_valid_num(argv[2]))
 	{
-		dict = input_dict(argv[1]);
+		dict = input_dict("./numbers.dict");
+		put_num_all(argv[2], dict);
 	}
 	ft_putchar('\n');
 	return (0);
