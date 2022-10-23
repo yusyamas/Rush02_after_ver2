@@ -13,4 +13,7 @@ fclean:
 	rm -f $(OBJS)
 	rm -f $(NAME)
 re:
-	fclean all
+	rm -f $(OBJS)
+	rm -f $(NAME)
+	$(CC) $(CFLAGS) -c $(SRCS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
